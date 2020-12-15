@@ -1,3 +1,6 @@
+console.log("hallo")
+
+
 const btn = document.querySelector("#btn");
 // cREATE GAME BOARD
 
@@ -17,7 +20,8 @@ const trumpDiv = document.querySelector(".trumpdiv");
 function renderOne(i) { 
   // 0 , 1, 2
   console.log(i);
-  singleLi[i].appendChild(trumpImage)
+  //singleLi[i].appendChild(trumpImage)
+  singleLi[i].innerHTML = trumpImage.outerHTML;
 }
 
 function createImages() {
